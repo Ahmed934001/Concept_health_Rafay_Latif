@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Concept Health Clinic — XML sitemap
+  ---------------------------------------------------------------------------
+  Only URLs that will genuinely exist at launch are listed. The content master
+  defines 7 pages; this build implements the homepage as a full single-page
+  experience, so the remaining routes are listed with a clear TODO below.
+  Remove any <url> still pointing at a page that has not shipped.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Concept Health Clinic — Internal Medicine and Geriatric Medicine in Denison, Texas</image:title>
+    </image:image>
+  </url>
+
+  <!-- ===========================================================
+       TODO before launch: publish these as real routes, then
+       uncomment. Do not activate a URL that 404s.
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/about</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/dr-rafay-latif</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/internal-medicine-denison-tx</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/geriatric-medicine-denison-tx</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/patient-resources</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/contact</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+       =========================================================== -->
+</urlset>
