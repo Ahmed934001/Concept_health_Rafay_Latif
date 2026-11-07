@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Concept Health Clinic - XML sitemap
+  Only URLs that genuinely exist are listed. This build ships the homepage as a
+  single-page experience plus two document pages.
+  When /about, /dr-rafay-latif, /internal-medicine-denison-tx,
+  /geriatric-medicine-denison-tx or /patient-resources actually ship, add them
+  here. Never list a URL that 404s.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.concepthealthclinic.com/assets/og-image.jpg</image:loc>
+      <image:title>Concept Health Clinic - Internal Medicine and Geriatric Medicine in Denison, Texas</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/privacy-policy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/accessibility</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

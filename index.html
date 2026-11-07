@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <!-- ======================================================================
+       CONCEPT HEALTH CLINIC — HOME
+       Internal Medicine & Geriatric Medicine · Denison, Texas
+       ----------------------------------------------------------------------
+       DEVELOPER NOTES
+       • Colour tokens, glass material and motion live in css/style.css
+       • Business data + chatbot graph live in js/config.js
+       • Portrait crops are generated from the client-supplied studio photograph.
+         Environmental imagery from Specialties/About is licensed stock and
+         should be swapped for approved clinic photography.
+       • Set window.CHC.forms.endpoint in js/config.js once the secure form
+         handler exists. Until then the form openly redirects to phone/email.
+       • Clinical copy, credentials, hours and suite number are pending final
+         clinic sign-off per the content master document.
+       ====================================================================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#103B5C">
+  <meta name="color-scheme" content="light">
+
+  <!-- ============================ PRIMARY SEO ============================ -->
+  <title>Internal &amp; Geriatric Medicine Denison TX | Concept Health Clinic</title>
+  <meta name="description" content="Explore adult Internal Medicine and specialized Geriatric Medicine at Concept Health Clinic in Denison, TX. Board-certified physician Rafay Latif, MD, MHA. Call (903) 600-2100.">
+  <meta name="keywords" content="Internal Medicine Denison TX, Geriatric Medicine Denison TX, Internal Medicine Doctor Denison TX, Geriatric Doctor Denison TX, Rafay Latif Denison, Concept Health Clinic Denison, adult medical care Denison TX, senior medical care Denison TX, geriatrician Sherman TX, primary care physician Denison Texas, frailty prevention, falls risk evaluation, polypharmacy medication review, transitions of care">
+  <meta name="author" content="Concept Health Clinic">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://www.concepthealthclinic.com/">
+
+  <!-- Geo / local signals -->
+  <meta name="geo.region" content="US-TX">
+  <meta name="geo.placename" content="Denison, Texas">
+  <meta name="geo.position" content="33.7557;-96.5367">
+  <meta name="ICBM" content="33.7557, -96.5367">
+
+  <!-- ============================ SOCIAL CARDS ========================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Concept Health Clinic">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Internal &amp; Geriatric Medicine in Denison, TX | Concept Health Clinic">
+  <meta property="og:description" content="Comprehensive adult care. Specialized geriatric expertise. Board-certified Internal Medicine and Geriatric Medicine with Rafay Latif, MD, MHA. Call (903) 600-2100.">
+  <meta property="og:url" content="https://www.concepthealthclinic.com/">
+  <meta property="og:image" content="https://www.concepthealthclinic.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A physician reviewing care notes with a patient at Concept Health Clinic in Denison, Texas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Internal &amp; Geriatric Medicine in Denison, TX | Concept Health Clinic">
+  <meta name="twitter:description" content="Comprehensive adult care with specialized geriatric expertise. Call (903) 600-2100 to schedule with Rafay Latif, MD, MHA.">
+  <meta name="twitter:image" content="https://www.concepthealthclinic.com/assets/og-image.jpg">
+
+  <!-- ============================ ICONS / FONTS ========================= -->
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="assets/logo-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ============================ STYLESHEETS =========================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ============================ SCHEMA.ORG ============================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["MedicalClinic", "MedicalBusiness", "LocalBusiness"],
+        "@id": "https://www.concepthealthclinic.com/#clinic",
+        "name": "Concept Health Clinic",
+        "alternateName": "Concept Health Clinic Denison",
+        "url": "https://www.concepthealthclinic.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.concepthealthclinic.com/#logo",
+          "url": "https://www.concepthealthclinic.com/assets/logo.png",
+          "width": 512,
+          "height": 512,
+          "caption": "Concept Health Clinic"
+        },
+        "image": "https://www.concepthealthclinic.com/assets/og-image.jpg",
+        "telephone": "+1-903-600-2100",
+        "email": "info@concepthealthclinic.com",
+        "slogan": "Comprehensive Adult Care. Specialized Geriatric Expertise.",
+        "description": "Concept Health Clinic provides compassionate, evidence-based Internal Medicine and Geriatric Care supporting health, independence and quality of life through every stage of adulthood in Denison, Texas.",
+        "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Check, Credit Card, Insurance",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4616 US Highway 75, Suite 203 'A'",
+          "addressLocality": "Denison",
+          "addressRegion": "TX",
+          "postalCode": "75020",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.7557,
+          "longitude": -96.5367
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=4616+US+Highway+75+Suite+203+Denison+TX+75020",
+        "areaServed": [
+          { "@type": "City", "name": "Denison" },
+          { "@type": "City", "name": "Sherman" },
+          { "@type": "City", "name": "Pottsboro" },
+          { "@type": "City", "name": "Howe" },
+          { "@type": "City", "name": "Bells" },
+          { "@type": "City", "name": "Van Alstyne" },
+          { "@type": "AdministrativeArea", "name": "Grayson County, Texas" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ],
+        "medicalSpecialty": ["InternalMedicine", "Geriatric"],
+        "availableService": [
+          {
+            "@type": "MedicalTherapy",
+            "name": "General Adult Internal Medicine",
+            "description": "Preventive healthcare, chronic disease management, comprehensive medical evaluation, medication review and ongoing adult healthcare."
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "Specialized Geriatric Medicine",
+            "description": "Comprehensive geriatric assessment, frailty prevention, falls risk evaluation, complex chronic condition management, polypharmacy review, transitions of care and goals of care planning."
+          }
+        ],
+        "employee": { "@id": "https://www.concepthealthclinic.com/#physician" },
+        "founder": { "@id": "https://www.concepthealthclinic.com/#physician" }
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://www.concepthealthclinic.com/#physician",
+        "name": "Rafay Latif, MD, MHA",
+        "givenName": "Rafay",
+        "familyName": "Latif",
+                "honorificSuffix": "MD, MHA",
+        "jobTitle": "Board-Certified Internal Medicine & Geriatric Medicine Physician",
+        "description": "Board-certified in Internal Medicine and Geriatric Medicine with more than 15 years of hospital-based clinical experience. Former Chief Hospitalist at Harlem Hospital Center; Master of Health Administration from Columbia University.",
+        "telephone": "+1-903-600-2100",
+        "image": "https://www.concepthealthclinic.com/assets/dr-rafay-latif.jpg",
+        "url": "https://www.concepthealthclinic.com/dr-rafay-latif",
+        "worksFor": { "@id": "https://www.concepthealthclinic.com/#clinic" },
+        "medicalSpecialty": ["InternalMedicine", "Geriatric"],
+        "knowsAbout": [
+          "Healthy aging",
+          "Frailty prevention",
+          "Falls risk reduction",
+          "Transitions of care",
+          "Polypharmacy",
+          "Advance care planning",
+          "Healthcare quality improvement",
+          "Medical education"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Columbia University",
+            "department": "Mailman School of Public Health — Master of Health Administration"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Columbia University — Harlem Hospital Center",
+            "description": "Internal Medicine Residency"
+          },
+          {
+            "@type": "MedicalOrganization",
+            "name": "Northwell Health / Zucker School of Medicine at Hofstra University",
+            "description": "Geriatric Medicine Fellowship"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4616 US Highway 75, Suite 203 'A'",
+          "addressLocality": "Denison",
+          "addressRegion": "TX",
+          "postalCode": "75020",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.concepthealthclinic.com/#website",
+        "url": "https://www.concepthealthclinic.com/",
+        "name": "Concept Health Clinic",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://www.concepthealthclinic.com/#clinic" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.concepthealthclinic.com/#webpage",
+        "url": "https://www.concepthealthclinic.com/",
+        "name": "Internal & Geriatric Medicine Denison TX | Concept Health Clinic",
+        "isPartOf": { "@id": "https://www.concepthealthclinic.com/#website" },
+        "about": { "@id": "https://www.concepthealthclinic.com/#clinic" },
+        "primaryImageOfPage": "https://www.concepthealthclinic.com/assets/og-image.jpg",
+        "datePublished": "2026-11-01",
+        "dateModified": "2026-11-02",
+        "breadcrumb": { "@id": "https://www.concepthealthclinic.com/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.concepthealthclinic.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.concepthealthclinic.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Internal Medicine in Denison, TX",
+            "item": "https://www.concepthealthclinic.com/internal-medicine-denison-tx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Geriatric Medicine in Denison, TX",
+            "item": "https://www.concepthealthclinic.com/geriatric-medicine-denison-tx"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.concepthealthclinic.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between Internal Medicine and Geriatric Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Internal Medicine focuses on adult healthcare, including the prevention, evaluation and management of medical conditions. Geriatric Medicine provides additional expertise in the complex medical and functional needs of older adults."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Concept Health Clinic see adults who are not seniors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Concept Health Clinic provides General Adult Internal Medicine as well as specialized Geriatric Medicine appointments for patients in Denison, Texas and surrounding communities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to have multiple medical conditions to see a geriatric physician?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Geriatric Medicine can be helpful for a variety of age-related medical concerns. Whether a consultation is appropriate depends on the patient's individual needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can geriatric care help with falls or mobility concerns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geriatric evaluation can consider medical and functional factors associated with falls and changes in mobility. Recommendations depend on the individual's circumstances."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I bring a family member to my appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, absolutely! You are welcome to bring a family member or caregiver to your appointment for support, comfort, and assistance in discussing your healthcare needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Concept Health Clinic provide chronic disease management?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "General Adult Internal Medicine includes the evaluation and management of adult medical conditions. Contact the clinic to confirm availability for your specific healthcare needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I request an appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call Concept Health Clinic at (903) 600-2100 during business hours. You may also access the patient portal for available online services."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Concept Health Clinic accept my insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Please contact the clinic directly to confirm accepted insurance plans, coverage and billing arrangements before your appointment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do in a medical emergency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call 911 or seek immediate emergency medical care. The clinic website and ordinary email are not emergency communication channels."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Graceful-degradation guard: if JS is off, reveal everything -->
+  <noscript>
+    <style>
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      #preloader { display: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <!-- ====================================================================
+       ACCESSIBILITY: skip link
+       ==================================================================== -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ====================================================================
+       PRELOADER — liquid glass dissolve
+       ==================================================================== -->
+  <div id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading Concept Health Clinic website">
+    <div class="preloader__inner">
+      <div class="preloader__mark"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+      <div class="preloader__wordmark">Concept Health Clinic</div>
+      <div class="preloader__bar"><span></span></div>
+      <p class="preloader__note">Preparing your care experience…</p>
+    </div>
+  </div>
+
+  <!-- Scroll progress rail -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       TOP BAR — NAP + live open status
+       ==================================================================== -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__inner">
+        <div class="topbar__group">
+          <a class="topbar__item" href="tel:+19036002100">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span>(903) 600-2100</span>
+          </a>
+          <span class="topbar__item d-none d-md-inline-flex">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Gateway Central · 4616 US Hwy 75, Suite 203 'A' · Denison, TX 75020</span>
+          </span>
+        </div>
+        <div class="topbar__group topbar__group--right">
+          <span class="topbar__item" data-open-status>
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            Mon–Fri 9–5 · Sat 9–1 CT
+          </span>
+          <span class="topbar__item topbar__visits" title="Total visits to this website">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            <span data-visitor-count>—</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       NAVBAR — glass, sticky, with persistent Call CTA
+       ==================================================================== -->
+  <header class="site-nav" id="siteNav">
+    <div class="container">
+      <div class="site-nav__inner">
+        <a class="brand" href="#home" aria-label="Concept Health Clinic — home">
+          <span class="brand__mark" aria-hidden="true">
+            <img src="assets/logo-mark.png" alt="" width="26" height="26" decoding="async">
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Concept Health Clinic</span>
+            <span class="brand__tag">Internal &amp; Geriatric Medicine</span>
+          </span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#home" data-spy>Home</a></li>
+            <li><a class="nav-link" href="#about" data-spy>About</a></li>
+            <li><a class="nav-link" href="#mission" data-spy>Mission</a></li>
+            <li><a class="nav-link" href="#physician" data-spy>Rafay Latif</a></li>
+            <li><a class="nav-link" href="#specialties" data-spy>Services</a></li>
+            <li><a class="nav-link" href="#activity" data-spy>Activity</a></li>
+            <li><a class="nav-link" href="#faq" data-spy>FAQs</a></li>
+            <li><a class="nav-link" href="#contact" data-spy>Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="tel:+19036002100" class="btn btn-call d-none d-lg-inline-flex">
+            <span class="btn-call__icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+            <span class="btn-call__txt">
+              <small>Call us today</small>
+              <span>(903) 600-2100</span>
+            </span>
+          </a>
+          <a href="tel:+19036002100" class="btn btn-glass-primary btn-sm d-lg-none btn-call-mobile"
+             aria-label="Call Concept Health Clinic at (903) 600-2100">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i><span> Call</span>
+          </a>
+          <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMobile" aria-label="Open navigation menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <nav aria-label="Mobile primary">
+      <ul>
+        <li><a href="#home">Home <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#about">About the Clinic <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#mission">Mission, Vision &amp; Values <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#physician">Meet Rafay Latif <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#internal-medicine">Internal Medicine <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#geriatric-medicine">Geriatric Medicine <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#journey">Your Care Journey <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#activity">Site Activity <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#faq">Patient Resources &amp; FAQs <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a href="#contact">Contact &amp; Appointments <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+      </ul>
+      <div class="d-grid gap-2">
+        <a href="tel:+19036002100" class="btn btn-call justify-content-center">
+          <span class="btn-call__icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+          <span class="btn-call__txt"><small>Call us today</small><span>(903) 600-2100</span></span>
+        </a>
+        <a href="#contact" class="btn btn-glass-ghost justify-content-center">
+          <i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Request an Appointment
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ==================================================================
+         HERO
+         ================================================================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <span class="hero__blob hero__blob--a" aria-hidden="true"></span>
+      <span class="hero__blob hero__blob--b" aria-hidden="true"></span>
+      <span class="hero__blob hero__blob--c" aria-hidden="true"></span>
+
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              Internal Medicine &amp; Geriatric Care · Denison, Texas
+            </p>
+
+            <h1 id="hero-title" data-split-words>Better Health Begins with Care That Understands You.</h1>
+
+            <p class="hero__sub">Comprehensive Adult Care. Specialized Geriatric Expertise.</p>
+
+            <p class="hero__copy">
+              At Concept Health Clinic, we believe exceptional healthcare begins with understanding
+              you. Led by <strong>Rafay Latif, MD, MHA</strong>, our clinic provides
+              comprehensive <a href="#internal-medicine">Internal Medicine in Denison, TX</a> and
+              specialized <a href="#geriatric-medicine">Geriatric Medicine in Denison, TX</a> for
+              adults and older adults across Grayson County.
+            </p>
+            <p class="hero__copy">
+              From preventive care and chronic condition management to the complex healthcare needs
+              that can accompany aging, our approach combines clinical experience, evidence-based
+              medicine, and compassionate attention to your individual needs.
+              <strong>Because your health deserves care that sees the whole person.</strong>
+            </p>
+
+            <div class="hero__cta">
+              <a href="tel:+19036002100" class="btn btn-call btn-lg" data-hero-call>
+                <span class="btn-call__icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+                <span class="btn-call__txt">
+                  <small>Call us — speak to a person</small>
+                  <span>(903) 600-2100</span>
+                </span>
+              </a>
+              <a href="#specialties" class="btn btn-glass-ghost btn-lg">
+                <i class="fa-solid fa-stethoscope" aria-hidden="true"></i> Explore Our Services
+              </a>
+            </div>
+
+            <div class="hero__trust">
+              <span class="hero__trust-item"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Board-certified in Internal &amp; Geriatric Medicine</span>
+              <span class="hero__trust-item"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> 15+ years of clinical experience</span>
+              <span class="hero__trust-item"><i class="fa-solid fa-user-check" aria-hidden="true"></i> Accepting new patients</span>
+            </div>
+
+            <span class="hero__scroll-hint" aria-hidden="true">
+              <span class="mouse"></span> Scroll to meet your physician
+            </span>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="hero-card glass" data-tilt="7">
+                <div class="hero-card__img">
+                  <img
+                    src="assets/dr-rafay-hero.jpg"
+                    srcset="assets/dr-rafay-hero-sm.jpg 585w,
+                            assets/dr-rafay-hero.jpg 900w"
+                    sizes="(max-width: 991px) 92vw, 46vw"
+                    alt="Rafay Latif, MD, MHA — board-certified Internal Medicine and Geriatric Medicine physician at Concept Health Clinic in Denison, Texas"
+                    width="900" height="922" fetchpriority="high" decoding="async">
+                  <div class="hero-card__badge glass">
+                    <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+                    <div>
+                      <strong>Rafay Latif, MD, MHA</strong>
+                      <span>Internal Medicine &amp; Geriatric Medicine</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="float-chip glass float-chip--tl">
+                <i class="fa-solid fa-heart-circle-check" aria-hidden="true"></i>
+                <div>
+                  <strong>Whole-person</strong>
+                  <span>care planning</span>
+                </div>
+              </div>
+
+              <div class="float-chip glass float-chip--br">
+                <i class="fa-solid fa-people-roof" aria-hidden="true"></i>
+                <div>
+                  <strong>Family involved</strong>
+                  <span>with your consent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         TRUST MARQUEE
+         ================================================================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item"><i class="fa-solid fa-shield-heart"></i> Board-Certified Internal Medicine</span>
+        <span class="marquee__item"><i class="fa-solid fa-person-cane"></i> Specialized Geriatric Medicine</span>
+        <span class="marquee__item"><i class="fa-solid fa-hospital"></i> 15+ Years Hospital Experience</span>
+        <span class="marquee__item"><i class="fa-solid fa-graduation-cap"></i> Columbia University MHA</span>
+        <span class="marquee__item"><i class="fa-solid fa-book-medical"></i> StatPearls Geriatric Editor-in-Chief</span>
+        <span class="marquee__item"><i class="fa-solid fa-house-medical"></i> Transitions of Care</span>
+        <span class="marquee__item"><i class="fa-solid fa-pills"></i> Medication &amp; Polypharmacy Review</span>
+        <span class="marquee__item"><i class="fa-solid fa-shoe-prints"></i> Falls Risk Evaluation</span>
+        <!-- Duplicated for a seamless loop -->
+        <span class="marquee__item"><i class="fa-solid fa-shield-heart"></i> Board-Certified Internal Medicine</span>
+        <span class="marquee__item"><i class="fa-solid fa-person-cane"></i> Specialized Geriatric Medicine</span>
+        <span class="marquee__item"><i class="fa-solid fa-hospital"></i> 15+ Years Hospital Experience</span>
+        <span class="marquee__item"><i class="fa-solid fa-graduation-cap"></i> Columbia University MHA</span>
+        <span class="marquee__item"><i class="fa-solid fa-book-medical"></i> StatPearls Geriatric Editor-in-Chief</span>
+        <span class="marquee__item"><i class="fa-solid fa-house-medical"></i> Transitions of Care</span>
+        <span class="marquee__item"><i class="fa-solid fa-pills"></i> Medication &amp; Polypharmacy Review</span>
+        <span class="marquee__item"><i class="fa-solid fa-shoe-prints"></i> Falls Risk Evaluation</span>
+      </div>
+    </div>
+
+    <!-- ==================================================================
+         ABOUT — "A More Personal Approach"
+         ================================================================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-reveal="left">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span> A more personal approach</p>
+            <h2 id="about-title" class="mb-4">
+              Healthcare should never feel like a <span class="title-underline">one-size-fits-all</span> experience.
+            </h2>
+            <p class="lead-soft">
+              At Concept Health Clinic, we recognize that every patient brings a unique medical
+              history, personal goals, and individual concerns.
+            </p>
+            <p>
+              Our approach goes beyond addressing immediate symptoms. We consider your overall
+              health, daily functioning, long-term needs, and the factors that matter most to your
+              quality of life. Whether you are seeking routine adult medical care or specialized
+              support for age-related health concerns, we aim to make your healthcare experience
+              informative, respectful, and centered around you.
+            </p>
+
+            <div class="row g-3 mt-4" data-reveal-group>
+              <div class="col-sm-6">
+                <div class="tile glass card-lift">
+                  <div class="tile__icon"><i class="fa-solid fa-ear-listen" aria-hidden="true"></i></div>
+                  <h3>We listen first</h3>
+                  <p>Effective care begins with understanding your history, concerns, and what a good day looks like for you.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="tile glass card-lift">
+                  <div class="tile__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                  <h3>Evidence Explained Openly</h3>
+                  <p>Clear language, no unnecessary jargon, and decisions you can actually understand and follow.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-reveal="right">
+            <div class="about-media">
+              <img
+                src="assets/dr-rafay-about.jpg"
+                srcset="assets/dr-rafay-about-sm.jpg 585w, assets/dr-rafay-about.jpg 900w"
+                sizes="(max-width: 991px) 92vw, 46vw"
+                alt="Rafay Latif, MD, MHA, the Internal Medicine and Geriatric Medicine physician at Concept Health Clinic in Denison, Texas"
+                width="900" height="675" loading="lazy" decoding="async"
+                class="about-media__img">
+              <div class="about-media__quote glass">
+                <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                <p>“Aging is personal. Your healthcare should be too.”</p>
+              </div>
+            </div>
+
+            <div class="stats-grid mt-4">
+              <div class="stat glass">
+                <div class="stat__num"><span data-count="15">15</span><span class="suffix">+</span></div>
+                <div class="stat__label">Years of clinical experience</div>
+              </div>
+              <div class="stat glass">
+                <div class="stat__num"><span data-count="2">2</span><span class="suffix">×</span></div>
+                <div class="stat__label">Board certifications</div>
+              </div>
+              <div class="stat glass">
+                <div class="stat__num"><span data-count="60">60</span><span class="suffix">min</span></div>
+                <div class="stat__label">First-visit conversations</div>
+              </div>
+              <div class="stat glass">
+                <div class="stat__num"><span data-count="7">7</span><span class="suffix">days</span></div>
+                <div class="stat__label">Post-hospital follow-up target</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         MISSION · VISION · VALUES
+         The philosophical core of the practice. Placed immediately after the
+         About narrative so a first-time visitor reads *why* the clinic exists
+         before they read *what* it offers.
+         ================================================================== -->
+    <section class="section surface-navy mission" id="mission" aria-labelledby="mission-title">
+      <span class="mission__glow mission__glow--a" aria-hidden="true"></span>
+      <span class="mission__glow mission__glow--b" aria-hidden="true"></span>
+
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Our mission, vision &amp; values</p>
+          <h2 id="mission-title">Healthcare Built Around People, Not Just Conditions.</h2>
+          <p style="color:rgba(255,255,255,.72)">
+            Three commitments guide every appointment, every phone call, and every decision we help
+            you make: why we exist, where we're going, and how we behave along the way.
+          </p>
+        </div>
+
+        <!-- Mission + Vision -->
+        <div class="row g-4 mb-4" data-reveal-group>
+          <div class="col-lg-7">
+            <article class="principle principle--mission glass glass--dark card-lift">
+              <div class="principle__icon">
+                <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              </div>
+              <span class="principle__label">Our Mission</span>
+              <h3 class="principle__title">
+                To provide compassionate, evidence-based Internal Medicine and Geriatric Care that
+                supports health, independence, and quality of life through every stage of adulthood.
+              </h3>
+              <ul class="principle__points">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Compassionate, evidence-based care</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Health, independence and quality of life</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Every stage of adulthood</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-5">
+            <article class="principle principle--vision glass glass--dark card-lift">
+              <div class="principle__icon principle__icon--aqua">
+                <i class="fa-solid fa-binoculars" aria-hidden="true"></i>
+              </div>
+              <span class="principle__label">Our Vision</span>
+              <h3 class="principle__title">
+                To be North Texas' most trusted destination for personalized adult and senior
+                healthcare.
+              </h3>
+              <p class="principle__note">
+                Trust is not claimed in a headline — it is earned one accurate diagnosis, one honest
+                conversation, and one returned phone call at a time.
+              </p>
+              <div class="principle__tags">
+                <span class="cred-pill"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> North Texas</span>
+                <span class="cred-pill"><i class="fa-solid fa-user-check" aria-hidden="true"></i> Personalized</span>
+                <span class="cred-pill"><i class="fa-solid fa-people-roof" aria-hidden="true"></i> Adult &amp; senior care</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Values -->
+        <div class="values-head" data-reveal="up">
+          <span class="values-head__rule" aria-hidden="true"></span>
+          <h3>Our Values</h3>
+          <span class="values-head__rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="values-grid" data-reveal-group>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+            <h4>Compassion</h4>
+            <p>We start with empathy, dignity and respect — every visit, every conversation.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+            <h4>Integrity</h4>
+            <p>Honest communication and transparent decisions, even when the news isn't simple.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-award" aria-hidden="true"></i>
+            <h4>Excellence</h4>
+            <p>Evidence-based medicine, sound clinical judgment and continuous learning.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+            <h4>Partnership</h4>
+            <p>We work with you, your family and your other clinicians as one team.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            <h4>Respect</h4>
+            <p>Your priorities, preferences and pace set the agenda — never a template.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+            <h4>Prevention</h4>
+            <p>We look ahead: screenings, lifestyle and early action before problems grow.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-person-walking" aria-hidden="true"></i>
+            <h4>Independence</h4>
+            <p>Function and mobility are medical outcomes. We protect them deliberately.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+            <h4>Innovation</h4>
+            <p>Quality improvement and modern care models, applied where they genuinely help.</p>
+          </div>
+          <div class="value-card glass glass--dark">
+            <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+            <h4>Patient-First Care</h4>
+            <p>Every decision begins with what is best for the person in the room.</p>
+          </div>
+        </div>
+
+        <div class="mission__cta" data-reveal="up">
+          <a href="tel:+19036002100" class="btn btn-call" data-call-location="mission">
+            <span class="btn-call__icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+            <span class="btn-call__txt">
+              <small>Talk to us about your care</small>
+              <span>(903) 600-2100</span>
+            </span>
+          </a>
+          <a href="#specialties" class="btn btn-glass-ghost">
+            <i class="fa-solid fa-stethoscope" aria-hidden="true"></i> See our specialties
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SPECIALTIES
+         ================================================================== -->
+    <section class="section surface-sage" id="specialties" aria-labelledby="specialties-title">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Our medical specialties</p>
+          <h2 id="specialties-title">Comprehensive Care Designed Around Your Needs</h2>
+          <p>Two specialties, one continuous relationship. Care that follows you through every stage of adulthood — and adapts as your needs change.</p>
+        </div>
+
+        <div class="row g-4 mb-4" data-reveal-group>
+          <div class="col-lg-6" id="internal-medicine">
+            <article class="svc-card glass card-lift">
+              <div class="svc-card__icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
+              <h3>General Adult Internal Medicine</h3>
+              <p>
+                Comprehensive medical care focused on adult health, preventive care, the evaluation
+                and management of medical conditions, and ongoing wellness. Our approach emphasizes
+                understanding your medical history, identifying health concerns, and developing
+                appropriate care plans based on your individual needs.
+              </p>
+              <ul class="svc-card__list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Preventive healthcare and recommended screenings</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Chronic disease management: Hypertension, Diabetes, Cholesterol and COPD</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Comprehensive medical evaluation for overlapping symptoms</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Medication review and ongoing adult healthcare</span></li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" id="geriatric-medicine">
+            <article class="svc-card glass card-lift">
+              <div class="svc-card__icon svc-card__icon--navy"><i class="fa-solid fa-person-cane" aria-hidden="true"></i></div>
+              <h3>Specialized Geriatric Medicine</h3>
+              <p>
+                As healthcare needs evolve with age, medical care often requires a more comprehensive
+                perspective. Our geriatric focus addresses the complex interaction of medical
+                conditions, medications, mobility, functional independence, and overall well-being.
+              </p>
+              <ul class="svc-card__list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Comprehensive geriatric assessment</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Frailty prevention and falls risk evaluation</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Complex chronic conditions and polypharmacy review</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Transitions of care, goals of care &amp; advance planning</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Service detail grid: the H3/H4 layer for SEO depth -->
+        <div class="row g-3" id="internal-medicine-detail" data-reveal-group>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></div>
+              <h4 class="h6">Preventive Healthcare</h4>
+              <p>Health-risk assessments, recommended screenings, lifestyle factors and preventive planning — before problems announce themselves.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3" id="geriatric-medicine-detail">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+              <h4 class="h6">Chronic Disease Management</h4>
+              <p>Regular monitoring, treatment adjustments and informed decision-making for long-term conditions.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+              <h4 class="h6">Comprehensive Evaluation</h4>
+              <p>When symptoms overlap or don't fit one diagnosis, we look at the whole picture — history, medications, exam and diagnostics.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-pills" aria-hidden="true"></i></div>
+              <h4 class="h6">Medication Review</h4>
+              <p>How your medicines work together, whether doses still fit, and whether anything can safely be simplified.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-shoe-prints" aria-hidden="true"></i></div>
+              <h4 class="h6">Falls Risk Evaluation</h4>
+              <p>Medical, functional and medication-related risk factors assessed together, with practical prevention strategies.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-dumbbell" aria-hidden="true"></i></div>
+              <h4 class="h6">Frailty Prevention</h4>
+              <p>Helping older adults maintain strength, balance, and confidence to enjoy everyday moments, stay independent, and live life with dignity.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-house-medical" aria-hidden="true"></i></div>
+              <h4 class="h6">Transitions of Care</h4>
+              <p>Continuity between hospital, home and rehabilitation — with medication information that actually matches reality.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100">
+              <div class="tile__icon"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></div>
+              <h4 class="h6">Goals of Care</h4>
+              <p>Thoughtful conversations about what matters most, so future decisions reflect your values not assumptions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internal linking block: reinforces topical relationships between the
+             two service clusters and gives crawlers descriptive anchor text. -->
+        <div class="row g-3 mt-4" data-reveal-group>
+          <div class="col-md-6">
+            <div class="tile glass" style="border-left:3px solid var(--green)">
+              <h4 class="h6 mb-2">Related reading</h4>
+              <ul class="footer-links" style="gap:8px">
+                <li><a href="#geriatric-medicine" style="color:var(--green-deep)"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Does an older adult need a geriatrician?</a></li>
+                <li><a href="#journey" style="color:var(--green-deep)"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> What happens at a comprehensive first visit</a></li>
+                <li><a href="#faq" style="color:var(--green-deep)"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Internal Medicine vs Geriatric Medicine</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tile glass" style="border-left:3px solid var(--navy)">
+              <h4 class="h6 mb-2">Common starting points</h4>
+              <ul class="footer-links" style="gap:8px">
+                <li><a href="#physician" style="color:var(--green-deep)"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Meet Rafay Latif, MD, MHA</a></li>
+                <li><a href="#faq" style="color:var(--green-deep)"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Preparing for your appointment</a></li>
+                <li><a href="#contact" style="color:var(--green-deep)"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Insurance, hours and location</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-reveal="up">
+          <a href="#contact" class="btn btn-glass-primary btn-lg">
+            <i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Contact Us to Schedule an Appointment
+          </a>
+          <p class="mt-3 mb-0 small text-muted-soft">Not sure which specialty fits? Call <a href="tel:+19036002100" class="fw-semibold">(903) 600-2100</a> — we'll help you decide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CARE JOURNEY — sticky 3D scroll
+         ================================================================== -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Your care journey</p>
+          <h2 id="journey-title">More Than Treating Conditions. Understanding People.</h2>
+          <p>We believe effective healthcare begins with listening, continues through informed clinical decisions, and respects the individual needs of every patient. Here is exactly how that looks in practice.</p>
+        </div>
+
+        <div class="journey">
+          <div class="journey__visual">
+            <div class="journey__sticky">
+              <div class="journey__stage glass" data-journey-stage>
+                <span class="journey__ring" aria-hidden="true"></span>
+                <span class="journey__ring journey__ring--2" aria-hidden="true"></span>
+                <div class="journey__stage-inner">
+                  <div class="journey__num" data-journey-num>01</div>
+                  <h3 data-journey-title>We listen — properly</h3>
+                  <p data-journey-copy>Your medical history and current concerns, in your words, without rushing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey__steps">
+            <article class="journey__step" data-journey-step data-step="1">
+              <span class="journey__step-label">Step 01 · Understanding</span>
+              <h3>We listen — properly</h3>
+              <p>Your medical history and current health concerns come first. Not a checklist — a conversation. This is where the useful details usually surface.</p>
+            </article>
+            <article class="journey__step" data-journey-step data-step="2">
+              <span class="journey__step-label">Step 02 · Prevention</span>
+              <h3>We plan ahead, not just behind</h3>
+              <p>Preventive healthcare and long-term wellness are discussed openly: which screenings are due, which lifestyle factors matter most for you, and what the next 12 months should look like.</p>
+            </article>
+            <article class="journey__step" data-journey-step data-step="3">
+              <span class="journey__step-label">Step 03 · Management</span>
+              <h3>We support what's ongoing</h3>
+              <p>Ongoing medical conditions get appropriate, consistent management — with treatment adjusted when the evidence, or your circumstances, change.</p>
+            </article>
+            <article class="journey__step" data-journey-step data-step="4">
+              <span class="journey__step-label">Step 04 · Function</span>
+              <h3>We protect independence</h3>
+              <p>As patients age, mobility and functional health matter as much as lab values. We consider both, because independence is a medical outcome too.</p>
+            </article>
+            <article class="journey__step" data-journey-step data-step="5">
+              <span class="journey__step-label">Step 05 · Partnership</span>
+              <h3>We keep everyone informed</h3>
+              <p>Informed decisions and clear communication — with you, and with family or caregivers involved when appropriate and with your consent.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         WHY CHOOSE
+         ================================================================== -->
+    <section class="section surface-sage" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Why patients choose us</p>
+          <h2 id="why-title">Experience, Compassion, and Clinical Excellence</h2>
+        </div>
+        <div class="row g-4" data-reveal-group>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100" data-tilt="6">
+              <div class="tile__icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+              <h3>Board-Certified Expertise</h3>
+              <p>Led by a physician board-certified in Internal Medicine and Geriatric Medicine — the two specialties adult care actually needs.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100" data-tilt="6">
+              <div class="tile__icon"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></div>
+              <h3>Patient-Centered Care</h3>
+              <p>Medical decisions informed by your health concerns, preferences, and personal goals — not by a template.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100" data-tilt="6">
+              <div class="tile__icon"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></div>
+              <h3>Extensive Experience</h3>
+              <p>More than 15 years of hospital-based clinical experience across academic centers, VA settings and community hospitals.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="tile glass card-lift h-100" data-tilt="6">
+              <div class="tile__icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+              <h3>A Comprehensive Perspective</h3>
+              <p>Care informed by experience in medical education, healthcare leadership, and quality improvement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PHYSICIAN
+         ================================================================== -->
+    <section class="section physician" id="physician" aria-labelledby="physician-title">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-reveal="left">
+            <div class="physician__photo">
+              <img
+                src="assets/dr-rafay-latif.jpg"
+                srcset="assets/dr-rafay-latif-sm.jpg 520w, assets/dr-rafay-latif.jpg 800w"
+                sizes="(max-width: 991px) 92vw, 40vw"
+                alt="Portrait of Rafay Latif, MD, MHA, board-certified in Internal Medicine and Geriatric Medicine"
+                width="800" height="920" loading="lazy" decoding="async">
+              <div class="physician__photo-caption">
+                <strong>Rafay Latif, MD, MHA</strong>
+                <span>Internal Medicine &amp; Geriatric Medicine · Denison, Texas</span>
+              </div>
+            </div>
+            <p class="small text-muted-soft mt-3 mb-0">
+              <i class="fa-solid fa-circle-check me-1 text-green" aria-hidden="true"></i>
+              Rafay Latif, MD, MHA · Gateway Central, Denison, Texas
+            </p>
+          </div>
+
+          <div class="col-lg-7" data-reveal="right">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Meet your physician</p>
+            <h2 id="physician-title">A Physician, A Healthcare Leader and An Educator.</h2>
+            <p class="lead-soft">
+              Rafay Latif is a board-certified Internal Medicine and Geriatric Medicine physician
+              with more than 15 years of experience in hospital-based medicine.
+            </p>
+            <p>
+              His professional background includes clinical practice in academic medical centers,
+              Veterans Affairs healthcare settings, and community hospitals, as well as leadership
+              roles in hospital medicine and medical education. With postgraduate training in
+              Internal Medicine and Geriatric Medicine and a Master of Health Administration from
+              Columbia University, Rafay Latif brings a comprehensive perspective to patient care.
+            </p>
+
+            <div class="mt-4 mb-2">
+              <span class="cred-pill"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Board-Certified: Internal Medicine</span>
+              <span class="cred-pill"><i class="fa-solid fa-person-cane" aria-hidden="true"></i> Board-Certified: Geriatric Medicine</span>
+              <span class="cred-pill"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> MHA, Columbia University</span>
+              <span class="cred-pill"><i class="fa-solid fa-book-medical" aria-hidden="true"></i> Editor-in-Chief, StatPearls Geriatrics</span>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline__item">
+                <strong>Geriatric Medicine Fellowship</strong>
+                <span>Northwell Health / Zucker School of Medicine at Hofstra University — Manhasset, New York</span>
+              </div>
+              <div class="timeline__item">
+                <strong>Internal Medicine Residency</strong>
+                <span>Columbia University – Harlem Hospital Center — New York, New York</span>
+              </div>
+              <div class="timeline__item">
+                <strong>Master of Health Administration</strong>
+                <span>Columbia University</span>
+              </div>
+              <div class="timeline__item">
+                <strong>Former Chief Hospitalist</strong>
+                <span>Harlem Hospital Center — hospital medicine leadership and clinical care</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#contact" class="btn btn-glass-primary">
+                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Request an Appointment
+              </a>
+              <a href="#journey" class="btn btn-glass-outline">
+                <i class="fa-solid fa-route" aria-hidden="true"></i> See Our Approach to Care
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         NEW PATIENT OFFER + COUNTDOWN
+         ================================================================== -->
+    <section class="section section--tight" id="offer" aria-labelledby="offer-title">
+      <div class="container">
+        <div class="offer surface-navy glass glass--dark" data-reveal="scale">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+              <p class="eyebrow"><span class="dot" aria-hidden="true"></span> New patient welcome</p>
+              <h2 id="offer-title">Start with a conversation.</h2>
+              <p style="color:rgba(255,255,255,.8)">
+                Every new patient begins with a thoughtful, unhurried first visit. We take time to
+                understand your medical history, review your medications, discuss your health goals,
+                and create a clear, personalized care plan. No unnecessary pressure — just
+                compassionate guidance and a better understanding of your health.
+              </p>
+              <ul class="checklist mt-4">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>45–60 minute comprehensive first visit</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Full medication and supplement review</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Falls, frailty and mobility screening for older adults</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Written care plan and clear next steps</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-5">
+              <div class="text-lg-end">
+                <p class="mb-2" style="color:rgba(255,255,255,.72); font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; font-weight:800">
+                  New patient slots refresh in
+                </p>
+                <div class="countdown" data-countdown aria-label="Time remaining in the current new patient intake window">
+                  <div class="countdown__box">
+                    <div class="countdown__num" data-cd-days>00</div>
+                    <div class="countdown__label">Days</div>
+                  </div>
+                  <div class="countdown__box">
+                    <div class="countdown__num" data-cd-hours>00</div>
+                    <div class="countdown__label">Hours</div>
+                  </div>
+                  <div class="countdown__box">
+                    <div class="countdown__num" data-cd-mins>00</div>
+                    <div class="countdown__label">Mins</div>
+                  </div>
+                  <div class="countdown__box">
+                    <div class="countdown__num" data-cd-secs>00</div>
+                    <div class="countdown__label">Secs</div>
+                  </div>
+                </div>
+                <p class="small mt-2" style="color:rgba(255,255,255,.55)" data-countdown-note>Central Time</p>
+
+                <a href="tel:+19036002100" class="btn btn-glass-primary btn-lg mt-3 w-100">
+                  <i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Call to Reserve Your Visit
+                </a>
+                <a href="#contact" class="btn btn-glass-ghost w-100 mt-2">
+                  <i class="fa-regular fa-message" aria-hidden="true"></i> Send a general inquiry instead
+                </a>
+                <p class="small mt-3 mb-0" style="color:rgba(255,255,255,.5)">
+                  <i class="fa-solid fa-circle-info me-1" aria-hidden="true"></i>
+                  Availability varies by week. Calling is the only way to confirm a specific slot.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SITE ACTIVITY — visitor counter + call-click counter
+         Shown as a full section so both metrics are unmissable rather than
+         buried in the footer. Values come from js/analytics.js.
+         ================================================================== -->
+    <section class="section section--tight" id="activity" aria-labelledby="activity-title">
+      <div class="container">
+        <div class="engagement-panel glass" data-engagement-panel data-mode="loading" data-reveal="scale">
+          <div class="engagement-panel__head">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Live site activity</p>
+            <h2 id="activity-title">People Are Finding Us — And Calling.</h2>
+            <p class="engagement-panel__lede">
+              These counters update in real time and are the honest measure of how many people
+              reach out after reading this page. No inflated numbers, no redirect tricks.
+            </p>
+          </div>
+
+          <div class="engagement-panel__grid">
+            <div class="engagement-stat">
+              <div class="engagement-stat__icon engagement-stat__icon--green">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+              </div>
+              <div class="engagement-stat__num" data-visitor-count>—</div>
+              <div class="engagement-stat__label">Website visits</div>
+              <p class="engagement-stat__hint">Every session on this site, counted once.</p>
+            </div>
+
+            <div class="engagement-stat">
+              <div class="engagement-stat__icon engagement-stat__icon--navy">
+                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+              </div>
+              <div class="engagement-stat__num" data-call-count>—</div>
+              <div class="engagement-stat__label">Calls started here</div>
+              <p class="engagement-stat__hint">Times a visitor tapped “call” on this website.</p>
+            </div>
+
+            <div class="engagement-stat">
+              <div class="engagement-stat__icon engagement-stat__icon--aqua">
+                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              </div>
+              <div class="engagement-stat__num engagement-stat__num--sm" data-open-status>—</div>
+              <div class="engagement-stat__label">Right now</div>
+              <p class="engagement-stat__hint">Live status, Central Time.</p>
+            </div>
+          </div>
+
+          <div class="engagement-panel__cta">
+            <a href="tel:+19036002100" class="btn btn-call" data-call-location="activity-panel">
+              <span class="btn-call__icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+              <span class="btn-call__txt"><small>Be the next call</small><span>(903) 600-2100</span></span>
+            </a>
+            <a href="#contact" class="btn btn-glass-ghost">
+              <i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Request an appointment
+            </a>
+          </div>
+
+          <p class="engagement-panel__foot" data-counter-mode>
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <span data-counter-mode-text>
+              Counts are aggregated. No personal information, health information or IP addresses are stored.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PATIENT RESOURCES + FAQ
+         ================================================================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5" data-reveal="left">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Patient resources</p>
+            <h2 id="faq-title">Helpful Information for Your Healthcare Journey</h2>
+            <p>
+              We want patients to feel informed and prepared when seeking medical care. This section
+              covers the patient portal, appointment preparation, and the questions people ask us
+              most often.
+            </p>
+
+            <div class="glass" style="padding:26px; border-radius:var(--r-lg); margin:26px 0">
+              <h3 class="h6 mb-2"><i class="fa-solid fa-lock me-2 text-green" aria-hidden="true"></i>Patient Portal</h3>
+              <p class="small mb-3">
+                Our online patient portal provides secure access to the patient services enabled by
+                Concept Health Clinic. Use the portal to sign in and review the features available for
+                your account.
+              </p>
+              <a href="https://mycw263.ecwcloud.com/portal32043/jsp/100mp/login_otp.jsp"
+                 class="btn btn-glass-navy btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Access Patient Portal
+              </a>
+              <p class="small text-muted-soft mt-3 mb-0">
+                External patient portal. Available features depend on the clinic's portal configuration.
+              </p>
+            </div>
+
+            <div class="glass" style="padding:26px; border-radius:var(--r-lg)">
+              <h3 class="h6 mb-3"><i class="fa-solid fa-briefcase-medical me-2 text-green" aria-hidden="true"></i>Preparing for Your Appointment</h3>
+              <ul class="svc-card__list mb-0">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>A government-issued photo ID</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Your insurance card, if applicable</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>A current list of medications and supplements</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Relevant medical records or recent test results</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Information about recent hospitalizations</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>A list of symptoms, concerns, or questions</span></li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Contact details of other clinicians involved in your care</span></li>
+              </ul>
+              <p class="small text-muted-soft mt-3 mb-0">
+                For geriatric appointments, information about recent falls, mobility changes, daily
+                functioning, or medication difficulties may also be helpful.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-reveal="right">
+            <h3 class="h5 mb-4">Frequently Asked Questions</h3>
+            <div class="faq-list" id="faqList">
+              <div class="faq-item is-open">
+                <button class="faq-q" type="button">
+                  <span>What is the difference between Internal Medicine and Geriatric Medicine?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a" style="max-height:400px">
+                  <div class="faq-a__inner">
+                    Internal Medicine focuses on adult healthcare, including the prevention,
+                    evaluation, and management of medical conditions. Geriatric Medicine provides
+                    additional expertise in the complex medical and functional needs of older adults.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>Does Concept Health Clinic see adults who are not seniors?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    Yes. Concept Health Clinic provides General Adult Internal Medicine as well as
+                    specialized Geriatric Medicine appointments. Adults of any age are welcome to
+                    inquire about Internal Medicine care.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>Do I need to have multiple medical conditions to see a geriatric physician?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    Not necessarily. Geriatric Medicine can be helpful for a variety of age-related
+                    medical concerns. Whether a consultation is appropriate depends on the patient's
+                    individual needs.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>Can geriatric care help with falls or mobility concerns?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    Geriatric evaluation can consider medical and functional factors associated with
+                    falls and changes in mobility. Recommendations depend on the individual's
+                    circumstances. <a href="#geriatric-medicine">Learn more about geriatric care</a>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>Can I bring a family member to my appointment?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    Yes, absolutely! You are welcome to bring a family member or caregiver to your
+                    appointment for support, comfort, and assistance in discussing your healthcare
+                    needs.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>Does the clinic provide chronic disease management?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    General Adult Internal Medicine includes the evaluation and management of adult
+                    medical conditions. Contact the clinic to confirm availability for your specific
+                    healthcare needs.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>How do I request an appointment?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    Call Concept Health Clinic at <a href="tel:+19036002100">(903) 600-2100</a> during
+                    business hours. You may also access the patient portal for available online
+                    services.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>Does Concept Health Clinic accept my insurance?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    Please contact the clinic directly to confirm accepted insurance plans, coverage,
+                    and billing arrangements before your appointment. Our front desk verifies plans
+                    over the phone.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q" type="button">
+                  <span>What should I do in a medical emergency?</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-a">
+                  <div class="faq-a__inner">
+                    <strong>Call 911 or seek immediate emergency medical care.</strong> The clinic
+                    website and ordinary email are not emergency communication channels.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item glass mt-3" style="border-radius:var(--r-md)">
+              <div style="padding:20px 22px; display:flex; gap:14px; align-items:flex-start; flex-wrap:wrap">
+                <i class="fa-solid fa-robot" style="font-size:1.4rem; color:var(--green); margin-top:2px" aria-hidden="true"></i>
+                <div style="flex:1 1 220px">
+                  <strong class="d-block" style="font-family:var(--font-head); color:var(--navy)">Still have a question?</strong>
+                  <span class="small text-muted-soft">Ask Clara, our patient assistant — she answers instantly, day or night.</span>
+                </div>
+                <button class="btn btn-glass-primary btn-sm" type="button" data-chat-open>
+                  <i class="fa-regular fa-comments" aria-hidden="true"></i> Ask Clara
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CONTACT
+         ================================================================== -->
+    <section class="section surface-sage" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Contact &amp; appointments</p>
+          <h2 id="contact-title">Let's Take the Next Step in Your Healthcare Journey</h2>
+          <p>Looking for an Internal Medicine Doctor in Denison, TX, or a Geriatric Doctor in
+            Denison, TX? Concept Health Clinic provides <strong>adult medical care in Denison TX</strong>
+            and <strong>senior medical care in Denison TX</strong> — call, write, or stop by and we
+            will find the right next step together.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-5" data-reveal="left">
+            <div class="contact-card glass">
+              <h3 class="h5 mb-3">Visit, call, or write to us</h3>
+
+              <div class="contact-row">
+                <div class="contact-row__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Clinic Address</strong>
+                  <p>Concept Health Clinic<br>
+                    Gateway Central<br>
+                    4616 US Highway 75, Suite 203 'A'<br>
+                    Denison, Texas 75020</p>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-row__icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+19036002100" class="fw-bold" style="font-size:1.02rem">(903) 600-2100</a>
+                  <p class="small text-muted-soft mb-0" data-best-time>Lines are quietest right now — good time to call.</p>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-row__icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:info@concepthealthclinic.com">info@concepthealthclinic.com</a>
+                  <p class="small text-muted-soft mb-0">General inquiries only — not for medical information.</p>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-row__icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></div>
+                <div style="width:100%">
+                  <strong>Clinic Hours</strong>
+                  <table class="hours-table" data-hours-table>
+                    <caption class="visually-hidden">Concept Health Clinic opening hours in Central Time</caption>
+                    <tbody>
+                      <tr data-day="1"><td>Monday</td><td>9:00 AM – 5:00 PM</td></tr>
+                      <tr data-day="2"><td>Tuesday</td><td>9:00 AM – 5:00 PM</td></tr>
+                      <tr data-day="3"><td>Wednesday</td><td>9:00 AM – 5:00 PM</td></tr>
+                      <tr data-day="4"><td>Thursday</td><td>9:00 AM – 5:00 PM</td></tr>
+                      <tr data-day="5"><td>Friday</td><td>9:00 AM – 5:00 PM</td></tr>
+                      <tr data-day="6"><td>Saturday</td><td>9:00 AM – 1:00 PM</td></tr>
+                      <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
+                    </tbody>
+                  </table>
+                  <p class="small text-muted-soft mt-2 mb-0">All times are Central Time. Holiday hours may vary.</p>
+                </div>
+              </div>
+
+              <!-- Live site activity: visitor counter + call-click counter -->
+              <div class="activity-strip" data-activity-strip>
+                <div class="activity-strip__item">
+                  <i class="fa-solid fa-users" aria-hidden="true"></i>
+                  <div>
+                    <strong data-visitor-count>—</strong>
+                    <span>Website visits</span>
+                  </div>
+                </div>
+                <div class="activity-strip__item">
+                  <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                  <div>
+                    <strong data-call-count>—</strong>
+                    <span>Calls started here</span>
+                  </div>
+                </div>
+                <p class="activity-strip__note">
+                  Counts are aggregated and contain no personal information.
+                </p>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a href="tel:+19036002100" class="btn btn-call btn-sm">
+                  <span class="btn-call__icon" style="width:30px;height:30px;font-size:.8rem"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+                  <span class="btn-call__txt"><small>Call now</small><span>(903) 600-2100</span></span>
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=4616+US+Highway+75+Suite+203+Denison+TX+75020"
+                   class="btn btn-glass-ghost btn-sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-reveal="right">
+            <div class="contact-card glass">
+              <h3 class="h5 mb-1">Send Us a General Inquiry</h3>
+              <p class="small text-muted-soft mb-4">
+                Fields marked * are required. We respond during clinic hours.
+              </p>
+
+              <div class="form-notice mb-4">
+                <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                <span>
+                  <strong>Please do not include medical histories, symptoms, diagnoses, or other
+                  sensitive health information in this general inquiry form.</strong>
+                  For medical matters, contact the clinic by phone or use an approved secure patient
+                  communication channel.
+                </span>
+              </div>
+
+              <form id="inquiryForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="fullName">Full Name *</label>
+                    <input class="form-control" id="fullName" name="fullName" type="text"
+                           autocomplete="name" required minlength="2" placeholder="e.g., Ayesha Khan">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Email Address *</label>
+                    <input class="form-control" id="email" name="email" type="email"
+                           autocomplete="email" required placeholder="you@example.com">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="phone">Phone Number *</label>
+                    <input class="form-control" id="phone" name="phone" type="tel"
+                           autocomplete="tel" required pattern="[0-9+()\-.\s]{7,20}"
+                           placeholder="(903) 000-0000">
+                    <div class="invalid-feedback">Please enter a phone number we can reach you on.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="inquiryType">Inquiry Type *</label>
+                    <select class="form-select" id="inquiryType" name="inquiryType" required>
+                      <option value="" selected disabled>Choose one…</option>
+                      <option>New patient appointment</option>
+                      <option>Internal Medicine</option>
+                      <option>Geriatric Medicine</option>
+                      <option>Insurance &amp; billing</option>
+                      <option>Patient portal access</option>
+                      <option>Records request</option>
+                      <option>Other general question</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose an inquiry type.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="message">Message *</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required
+                              minlength="10"
+                              placeholder="Tell us how we can help — without personal health details."></textarea>
+                    <div class="invalid-feedback">Please add a short message (10 characters or more).</div>
+                  </div>
+
+                  <!-- Honeypot: invisible to humans, irresistible to bots -->
+                  <div class="col-12" aria-hidden="true" style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden">
+                    <label for="company_website">Company website</label>
+                    <input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consent" name="consent" required>
+                      <label class="form-check-label small" for="consent">
+                        I understand this form is for general inquiries only, and that it is not a
+                        secure channel for medical information. *
+                      </label>
+                      <div class="invalid-feedback">Please confirm before submitting.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
+                    <button class="btn btn-glass-primary" type="submit">
+                      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Inquiry
+                    </button>
+                    <a href="tel:+19036002100" class="btn btn-glass-outline">
+                      <i class="fa-solid fa-phone" aria-hidden="true"></i> Or call instead
+                    </a>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+                      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CLOSING CTA
+         ================================================================== -->
+    <section class="section section--tight" aria-labelledby="closing-title">
+      <div class="container">
+        <div class="glass" style="padding:clamp(28px,4.5vw,64px); border-radius:var(--r-xl); text-align:center" data-reveal="scale">
+          <p class="eyebrow mx-auto"><span class="dot" aria-hidden="true"></span> Your next step</p>
+          <h2 id="closing-title" class="mb-3" style="font-size:clamp(1.7rem,3.6vw,2.6rem)">
+            Your Next Step Toward Better Health Starts Here.
+          </h2>
+          <p class="lead-soft mx-auto mb-4" style="max-width:64ch">
+            Whether you need comprehensive adult medical care or specialized geriatric expertise,
+            Concept Health Clinic is here to discuss your healthcare needs.
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a href="tel:+19036002100" class="btn btn-call btn-lg">
+              <span class="btn-call__icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></span>
+              <span class="btn-call__txt"><small>Call us — we answer</small><span>(903) 600-2100</span></span>
+            </a>
+            <button type="button" class="btn btn-glass-ghost btn-lg" data-chat-open>
+              <i class="fa-regular fa-comments" aria-hidden="true"></i> Ask a Question Instantly
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="site-footer surface-navy" aria-labelledby="footer-title">
+    <div class="container">
+      <h2 id="footer-title" class="visually-hidden">Concept Health Clinic — site information</h2>
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a class="brand mb-3" href="#home" aria-label="Concept Health Clinic — back to top">
+            <span class="brand__mark brand__mark--footer" aria-hidden="true">
+              <img src="assets/logo-mark.png" alt="" width="30" height="30" decoding="async">
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">Concept Health Clinic</span>
+              <span class="brand__tag">Comprehensive Adult Care</span>
+            </span>
+          </a>
+          <p class="footer-about">
+            <strong style="color:#fff">Concept Health Clinic Denison</strong> provides
+            patient-centered <strong style="color:#fff">Internal Medicine</strong> and specialized
+            <strong style="color:#fff">Geriatric Medicine</strong> in Denison, Texas. Led by
+            Rafay Latif, MD, MHA.
+          </p>
+          <!-- Real destinations only. Generic facebook.com / instagram.com /
+               linkedin.com links were removed — they led to empty homepages and
+               would read as broken to a visitor. Add the clinic's real profile
+               URLs here once they exist, and mirror them in the sameAs schema. -->
+          <div class="social-row">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=4616+US+Highway+75+Suite+203+Denison+TX+75020" target="_blank" rel="noopener noreferrer" aria-label="Find Concept Health Clinic on Google Maps"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+            <a href="tel:+19036002100" aria-label="Call Concept Health Clinic at 903 600 2100"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:info@concepthealthclinic.com" aria-label="Email Concept Health Clinic"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://mycw263.ecwcloud.com/portal32043/jsp/100mp/login_otp.jsp" target="_blank" rel="noopener noreferrer" aria-label="Access the Concept Health Clinic patient portal"><i class="fa-solid fa-lock" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="#mission"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Mission &amp; Values</a></li>
+            <li><a href="#physician"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Our Physician</a></li>
+            <li><a href="#internal-medicine"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Internal Medicine</a></li>
+            <li><a href="#geriatric-medicine"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Geriatric Medicine</a></li>
+            <li><a href="#faq"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Patient Resources</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Patients</h3>
+          <ul class="footer-links">
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+            <li><a href="https://mycw263.ecwcloud.com/portal32043/jsp/100mp/login_otp.jsp" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Patient Portal</a></li>
+            <li><a href="#faq"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> FAQs</a></li>
+            <li><a href="privacy-policy.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Privacy Policy</a></li>
+            <li><a href="accessibility.html"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Accessibility Statement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+19036002100" class="fw-bold">(903) 600-2100</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:info@concepthealthclinic.com">info@concepthealthclinic.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Gateway Central<br>4616 US Highway 75, Suite 203 'A'<br>Denison, TX 75020</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              <span>Mon–Fri 9:00 AM–5:00 PM<br>Sat 9:00 AM–1:00 PM · Sun Closed<br><span style="opacity:.7">Central Time</span></span>
+            </li>
+          </ul>
+
+          <a href="tel:+19036002100" class="btn btn-glass-primary btn-sm mt-3">
+            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Call the Clinic
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer live map: the same facade pattern as the Contact section, so
+           visitors who reach the bottom of the page can orient themselves
+           without scrolling back up. -->
+      <div class="footer-map" data-reveal="up">
+        <div class="footer-map__info">
+          <h3 class="footer-title mb-3">Find Us</h3>
+          <p class="footer-map__addr">
+            <strong>Concept Health Clinic</strong><br>
+            Gateway Central<br>
+            4616 US Highway 75, Suite 203 'A'<br>
+            Denison, Texas 75020
+          </p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=4616+US+Highway+75+Suite+203+Denison+TX+75020"
+               class="btn btn-glass-primary btn-sm" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get directions
+            </a>
+            <a href="tel:+19036002100" class="btn btn-glass-ghost btn-sm">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> Call before you come
+            </a>
+          </div>
+          <p class="footer-map__note">
+            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+            Mon–Fri 9:00 AM–5:00 PM · Sat 9:00 AM–1:00 PM · Closed Sunday (Central Time)
+          </p>
+        </div>
+
+        <div class="map-frame map-frame--live map-frame--footer" id="footerMap">
+          <div class="map-facade" data-map-facade data-map-target="footerMap">
+            <div class="map-facade__inner">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              <p class="map-facade__title">Open the live map</p>
+              <p class="map-facade__sub">Denison, Texas 75020</p>
+              <button type="button" class="btn btn-glass-primary btn-sm" data-map-load>
+                <i class="fa-solid fa-map" aria-hidden="true"></i> Load map
+              </button>
+              <p class="map-facade__note">Loading the map shares your IP address with Google.</p>
+            </div>
+          </div>
+          <noscript>
+            <div style="padding:20px;text-align:center">
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=4616+US+Highway+75+Suite+203+Denison+TX+75020">Get directions on Google Maps</a>
+            </div>
+          </noscript>
+        </div>
+      </div>
+
+      <div class="emergency-bar">
+        <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+        <span>
+          <strong>Medical emergency?</strong> Call 911 or go to the nearest emergency department.
+          This website, its forms, and ordinary email are never appropriate for urgent medical
+          concerns.
+        </span>
+      </div>
+
+      <p class="disclaimer">
+        <strong style="color:rgba(255,255,255,.72)">Medical disclaimer:</strong>
+        Information on this website is for general educational purposes and does not replace
+        individualized medical advice, diagnosis, or treatment. If you are experiencing a medical
+        emergency, call 911.
+      </p>
+
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> Concept Health Clinic. All rights reserved.</span>
+        <span class="footer-stats">
+          <span class="footer-stat" title="Total website visits">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            <span data-visitor-count>—</span> visits
+          </span>
+          <span class="footer-stat" title="Calls started from this website">
+            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+            <span data-call-count>—</span> calls
+          </span>
+          <a href="#home" style="color:rgba(255,255,255,.7)">Back to top ↑</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       FLOATING ACTIONS
+       LEFT  : Book an appointment (animated) + vibrating Call button above it
+       RIGHT : Chatbot launcher
+       ==================================================================== -->
+
+  <!-- Left stack -->
+  <div class="fab-stack fab-stack--left">
+    <!-- Vibrating call button sits directly ABOVE the booking button -->
+    <a class="fab fab--call" href="tel:+19036002100" aria-label="Call Concept Health Clinic at 903 600 2100">
+      <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+      <span class="fab__label">Call (903) 600-2100</span>
+    </a>
+
+    <!-- Primary booking action — opens the eClinicalWorks patient portal in a
+         new tab. Shares the portal-click counter with the in-page portal links. -->
+    <a class="fab fab--booking"
+       href="https://mycw263.ecwcloud.com/portal32043/jsp/100mp/login_otp.jsp"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Book an appointment online through the Concept Health Clinic patient portal">
+      <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+      <span class="fab__label">Book an appointment</span>
+    </a>
+  </div>
+
+  <!-- Right stack -->
+  <div class="fab-stack">
+    <button class="fab fab--chat" type="button" data-chat-open aria-expanded="false" aria-controls="chatbot"
+            aria-label="Open Clara, the Concept Health Clinic patient assistant">
+      <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+      <span class="fab__badge" data-chat-badge style="display:none">1</span>
+      <span class="fab__label">Ask Clara — instant answers</span>
+    </button>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ====================================================================
+       CHATBOT PANEL
+       ==================================================================== -->
+  <section class="chatbot glass" id="chatbot" aria-hidden="true" aria-label="Clara — Concept Health Clinic patient assistant">
+    <header class="chatbot__head">
+      <div class="chatbot__avatar" aria-hidden="true"><i class="fa-solid fa-user-nurse"></i></div>
+      <div class="chatbot__head-text">
+        <strong>Clara · Patient Assistant</strong>
+        <span><i class="fa-solid fa-circle" aria-hidden="true"></i> Online · answers instantly</span>
+      </div>
+      <button class="chatbot__close" id="chatClose" type="button" aria-label="Close chat">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <div class="chatbot__body" id="chatBody" role="log" aria-live="polite" aria-label="Conversation">
+      <!-- The opening message is rendered by js/chatbot.js from js/config.js -->
+    </div>
+
+    <div class="chatbot__chips" id="chatChips" aria-label="Suggested replies"></div>
+
+    <form class="chatbot__foot" id="chatForm" autocomplete="off">
+      <label class="visually-hidden" for="chatInput">Type your question</label>
+      <input class="chatbot__input" id="chatInput" type="text" placeholder="Ask about appointments, geriatric care…" maxlength="240">
+      <button class="chatbot__send" id="chatSend" type="submit" aria-label="Send message">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+      </button>
+    </form>
+  </section>
+
+  <!-- ====================================================================
+       JAVASCRIPT
+       Order matters: config → vendor → feature modules.
+       All vendors are deferred; feature scripts run after them.
+       ==================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+
+  <!--
+    FORM ENDPOINT
+    -------------
+    Set a secure, HIPAA-appropriate intake endpoint before launch. Until it is
+    set, the form deliberately refuses to claim success and hands the visitor
+    a phone number and a pre-filled email instead.
+
+      <script>window.CHC.forms = { endpoint: "https://forms.example.com/intake" };</script>
+
+    Place that snippet AFTER js/config.js loads.
+  -->
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/engagement.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+
+  <!-- Lenis smooth scroll — optional enhancement, loaded last so a failure is harmless -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+  <script defer>
+    window.addEventListener("DOMContentLoaded", function () {
+      try {
+        if (window.Lenis && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          var lenis = new Lenis({ duration: 1.05, smoothWheel: true, wheelMultiplier: 0.9 });
+          window.__lenis = lenis;
+          function raf(t) { lenis.raf(t); requestAnimationFrame(raf); }
+          requestAnimationFrame(raf);
+          if (window.gsap && window.ScrollTrigger) {
+            lenis.on("scroll", window.ScrollTrigger.update);
+          }
+        }
+      } catch (e) {
+        console.warn("[CHC] smooth scroll unavailable:", e);
+      }
+    });
+  </script>
+</body>
+</html>
