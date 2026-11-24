@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Concept Health Clinic - XML sitemap
+  Every URL listed here maps to a real HTML file in this build. Canonicals use
+  extensionless paths, so .htaccess (Apache) and _redirects (Netlify-style
+  hosts) both resolve /slug to /slug.html. Never list a URL that 404s.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.concepthealthclinic.com/assets/og-image.jpg</image:loc>
+      <image:title>Concept Health Clinic - Internal Medicine and Geriatric Medicine in Denison, Texas</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/about</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.concepthealthclinic.com/assets/dr-rafay-about.jpg</image:loc>
+      <image:title>About Concept Health Clinic in Denison, Texas</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/rafay-latif</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.concepthealthclinic.com/assets/dr-rafay-latif.jpg</image:loc>
+      <image:title>Rafay Latif, MD, MHA - Internal Medicine and Geriatric Medicine</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/internal-medicine-denison-tx</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.concepthealthclinic.com/assets/og-image.jpg</image:loc>
+      <image:title>Internal Medicine in Denison, Texas - Concept Health Clinic</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/geriatric-medicine-denison-tx</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.concepthealthclinic.com/assets/og-image.jpg</image:loc>
+      <image:title>Geriatric Medicine in Denison, Texas - Concept Health Clinic</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/patient-resources</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/privacy-policy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/accessibility</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.concepthealthclinic.com/contact</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+<url><loc>https://www.concepthealthclinic.com/common-geriatric-syndrome</loc></url></urlset>

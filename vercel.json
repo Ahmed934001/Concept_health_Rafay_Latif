@@ -1,0 +1,40 @@
+{
+  "rewrites": [
+    {
+      "source": "/internal-medicine-denison-tx",
+      "destination": "/internal-medicine-denison-tx.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/patient-resources",
+      "destination": "/patient-resources.html"
+    },
+    {
+      "source": "/rafay-latif",
+      "destination": "/rafay-latif.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/accessibility",
+      "destination": "/accessibility.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/geriatric-medicine-denison-tx",
+      "destination": "/geriatric-medicine-denison-tx.html"
+    },
+    {
+      "source": "/common-geriatric-syndrome",
+      "destination": "/common-geriatric-syndrome.html"
+    }
+  ]
+}

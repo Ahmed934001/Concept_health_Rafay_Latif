@@ -1,0 +1,402 @@
+/* ==========================================================================
+   CONCEPT HEALTH CLINIC — INNER PAGES
+   File: css/pages.css
+   Used by: about.html, rafay-latif.html, internal-medicine-denison-tx.html,
+            geriatric-medicine-denison-tx.html, patient-resources.html
+   Builds on css/style.css (tokens + glass) and css/legal.css (document shell).
+   Only inner-page composition lives here.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   PAGE HERO — the inner-page equivalent of the homepage hero, without the
+   three-column weight. Keeps the same eyebrow / h1 / lede rhythm.
+   -------------------------------------------------------------------------- */
+.page-hero {
+  position: relative;
+  padding: clamp(36px, 5.5vw, 72px) 0 clamp(28px, 4vw, 48px);
+  overflow: hidden;
+  isolation: isolate;
+}
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: -40% -10% auto -10%;
+  height: 130%;
+  z-index: -1;
+  background:
+    radial-gradient(38% 52% at 12% 18%, rgba(82, 169, 124, 0.16), transparent 70%),
+    radial-gradient(34% 46% at 88% 8%, rgba(126, 200, 192, 0.18), transparent 72%);
+  pointer-events: none;
+}
+.page-hero h1 {
+  font-size: clamp(1.85rem, 4.2vw, 3rem);
+  letter-spacing: -0.032em;
+  line-height: 1.08;
+  margin-bottom: 0.4em;
+  max-width: 20ch;
+}
+.page-hero__lede {
+  font-size: clamp(0.98rem, 1.35vw, 1.1rem);
+  line-height: 1.75;
+  color: #41586b;
+  max-width: 64ch;
+}
+.page-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: clamp(20px, 2.6vw, 28px);
+}
+
+/* Photo + text split used on About and the physician page */
+.page-split {
+  display: grid;
+  gap: clamp(26px, 4vw, 52px);
+  align-items: start;
+}
+@media (min-width: 992px) {
+  .page-split { grid-template-columns: 0.9fr 1.1fr; }
+  .page-split--reverse { grid-template-columns: 1.1fr 0.9fr; }
+  .page-split--reverse > .page-split__media { order: 2; }
+}
+.page-split__media img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-xl);
+  box-shadow: 0 28px 64px -32px rgba(16, 59, 92, 0.55);
+}
+.page-split__caption {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: #5d7484;
+}
+
+/* --------------------------------------------------------------------------
+   PROSE BLOCKS
+   -------------------------------------------------------------------------- */
+.page-prose h2 {
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  letter-spacing: -0.022em;
+  margin: 0 0 0.6em;
+}
+/* A section heading that follows body copy needs air above it; the very first
+   one (which opens the column) must not. */
+.page-prose > h2:not(:first-child),
+.page-prose > h2 ~ h2 { margin-top: 1.7em; }
+.page-prose > ul + h2,
+.page-prose > p + h2 { margin-top: 1.9em; }
+.page-prose > h2 + ul,
+.page-prose > h2 + p { margin-top: 0; }
+.page-prose h3 {
+  font-size: 1.02rem;
+  margin: 1.5em 0 0.45em;
+  color: var(--navy);
+}
+.page-prose p,
+.page-prose li {
+  font-size: 0.96rem;
+  line-height: 1.8;
+  color: #3d5262;
+}
+.page-prose p { margin-bottom: 1em; }
+.page-prose ul { padding-left: 1.1em; margin-bottom: 1em; }
+.page-prose li { margin-bottom: 0.45em; }
+.page-prose li::marker { color: var(--green); }
+.page-prose a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
+
+/* --------------------------------------------------------------------------
+   FEATURE CARDS / CHECK GRID
+   -------------------------------------------------------------------------- */
+.feature-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 576px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 992px) { .feature-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.feature-card {
+  padding: 22px 20px;
+  border-radius: var(--r-md);
+  height: auto;
+  transition: transform 0.4s var(--ease-glass), box-shadow 0.4s var(--ease-glass);
+}
+/* Inside the grid every card stretches to its row; as a plain block (the
+   portal / preparation cards in a column) it must hug its content instead of
+   inheriting the column height. */
+.feature-grid .feature-card { height: 100%; }
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 26px 50px -30px rgba(16, 59, 92, 0.5);
+}
+.feature-card > i {
+  display: grid;
+  place-items: center;
+  width: 42px; height: 42px;
+  border-radius: 13px;
+  font-size: 0.98rem;
+  color: #fff;
+  background: linear-gradient(145deg, var(--green-bright), var(--green-deep));
+  box-shadow: 0 10px 22px -12px rgba(47, 107, 78, 0.85);
+  margin-bottom: 14px;
+}
+.feature-card h3 {
+  font-size: 0.98rem;
+  margin: 0 0 7px;
+  letter-spacing: -0.012em;
+}
+.feature-card p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #4d6474;
+  margin: 0;
+}
+
+/* Checklist used inside service pages */
+.page-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2em;
+  display: grid;
+  gap: 11px;
+}
+.page-checklist li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: #3d5262;
+}
+.page-checklist i {
+  color: var(--green);
+  font-size: 0.78rem;
+  margin-top: 6px;
+  flex: 0 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   CALLOUT — mirrors the legal-page callout but with the site palette
+   -------------------------------------------------------------------------- */
+.page-note {
+  display: flex;
+  gap: 13px;
+  padding: 17px 19px;
+  border-radius: var(--r-md);
+  background: rgba(231, 242, 237, 0.85);
+  border: 1px solid rgba(67, 140, 104, 0.22);
+  margin-bottom: 1.2em;
+}
+.page-note > i { color: var(--green-deep); margin-top: 3px; flex: 0 0 auto; }
+.page-note p { font-size: 0.9rem; line-height: 1.65; margin: 0; }
+.page-note strong { color: var(--navy); }
+
+.page-note--info {
+  background: rgba(126, 200, 192, 0.14);
+  border-color: rgba(74, 155, 184, 0.28);
+}
+.page-note--info > i { color: #3e8fa8; }
+
+/* --------------------------------------------------------------------------
+   RELATED-LINK STRIP — internal linking between the service pages
+   -------------------------------------------------------------------------- */
+.related-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) { .related-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1200px) { .related-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  border-radius: var(--r-md);
+  text-decoration: none;
+  transition: transform 0.35s var(--ease-glass), box-shadow 0.35s var(--ease-glass);
+}
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 46px -28px rgba(16, 59, 92, 0.5);
+}
+.related-card span.related-card__kicker {
+  font-family: var(--font-head);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+}
+.related-card strong {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  color: var(--navy);
+  line-height: 1.35;
+}
+.related-card p {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #4d6474;
+  margin: 0;
+}
+.related-card i.related-card__arrow {
+  margin-top: 6px;
+  color: var(--green);
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   FAQ LIST ON INNER PAGES (reuses the homepage accordion styling)
+   -------------------------------------------------------------------------- */
+.page-faq { display: grid; gap: 10px; }
+.page-faq details {
+  border-radius: var(--r-md);
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(16, 59, 92, 0.09);
+}
+.page-faq summary {
+  cursor: pointer;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.94rem;
+  color: var(--navy);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+.page-faq summary::-webkit-details-marker { display: none; }
+.page-faq summary::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.7rem;
+  color: var(--green);
+  transition: transform 0.3s var(--ease-glass);
+  flex: 0 0 auto;
+  margin-top: 3px;
+}
+.page-faq details[open] summary::after { transform: rotate(180deg); }
+.page-faq details p {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.72;
+  color: #40586b;
+}
+
+/* --------------------------------------------------------------------------
+   TIMELINE — credentials on the physician page
+   -------------------------------------------------------------------------- */
+.cred-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+}
+.cred-timeline li {
+  position: relative;
+  padding: 0 0 24px 30px;
+  border-left: 1.5px solid rgba(67, 140, 104, 0.3);
+}
+.cred-timeline li:last-child { border-left-color: transparent; padding-bottom: 0; }
+.cred-timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6.5px; top: 4px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 4px rgba(67, 140, 104, 0.16);
+}
+.cred-timeline strong {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 0.96rem;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+.cred-timeline span {
+  font-size: 0.86rem;
+  color: #4d6474;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION RHYTHM
+   -------------------------------------------------------------------------- */
+.page-section { padding: clamp(34px, 4.5vw, 62px) 0; }
+.page-section--tight { padding: clamp(24px, 3vw, 40px) 0; }
+.page-section__head { margin-bottom: clamp(20px, 2.6vw, 30px); max-width: 62ch; }
+.page-section__head h2 {
+  font-size: clamp(1.3rem, 2.6vw, 1.85rem);
+  letter-spacing: -0.026em;
+  margin-bottom: 0.4em;
+}
+.page-section__head p { color: #4d6474; font-size: 0.96rem; line-height: 1.7; margin: 0; }
+
+/* Sidebar CTA used on service pages */
+.page-aside {
+  padding: 24px;
+  border-radius: var(--r-lg);
+  position: sticky;
+  top: calc(var(--nav-h) + 18px);
+}
+@media (max-width: 991.98px) { .page-aside { position: static; } }
+.page-aside h2 { font-size: 1.05rem; margin-bottom: 0.5em; }
+.page-aside p { font-size: 0.87rem; line-height: 1.65; color: #4d6474; }
+.page-aside .btn { width: 100%; justify-content: center; }
+.page-aside__divider {
+  height: 1px;
+  background: rgba(16, 59, 92, 0.1);
+  margin: 18px 0;
+}
+.page-aside dl { margin: 0; display: grid; gap: 10px; font-size: 0.84rem; }
+.page-aside dt { font-family: var(--font-head); font-weight: 800; color: var(--navy); font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.page-aside dd { margin: 2px 0 0; color: #4d6474; line-height: 1.55; }
+
+/* --------------------------------------------------------------------------
+   MOBILE DRAWER POLISH
+   The drawer scrolls under the floating call/booking buttons, so the CTA pair
+   at the bottom of the list was partially covered. Add breathing room equal to
+   the FAB stack height plus the safe-area inset.
+   -------------------------------------------------------------------------- */
+.nav-mobile { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+
+/* While the drawer is open the floating actions would sit on top of its CTA
+   pair, so they step aside. main.js toggles .drawer-open on <body>. */
+body.drawer-open .fab-stack,
+body.drawer-open .back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.3s var(--ease-glass), transform 0.3s var(--ease-glass), visibility 0.3s;
+}
+
+/* The drawer styles every anchor as a light glass row. Its two CTAs must keep
+   their own treatment, or the label text lands on the wrong surface. `.nav-mobile
+   a.btn` is more specific than the button components, so restore each one. */
+.nav-mobile a.btn {
+  justify-content: center;
+  padding: 13px 22px;
+  border-radius: var(--r-pill);
+  box-shadow: 0 12px 30px -14px rgba(16, 59, 92, 0.75);
+}
+.nav-mobile a.btn-glass-ghost {
+  color: var(--navy);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* Compact spacing above the geriatric directory. */
+.syndrome-page .page-hero { padding-bottom:16px; }
+.syndrome-page .page-hero h1 { margin-bottom:0; }
+.syndrome-page > .page-section { margin-top:0; padding-top:16px; }
